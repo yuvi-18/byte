@@ -1,0 +1,121 @@
+:root{
+    --bgc: linear-gradient(180deg, #454545, #121212);
+    --font: "Baloo Bhaina 2", sans-srif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+.body{
+    background: var(--bgc);
+    position: relative;
+    width: 100vw;
+    padding: 0;
+    height: 100vh;
+}
+
+.logo{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-size: cover;
+    background-size: contain;
+}
+
+.logo img{
+    height: 120%;
+}
+
+.person{
+    height: 23vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.person svg{
+    width: 10vw;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    background-color: #fff;
+    opacity: 0.3;
+    height: 60vh;
+    width: 50%;
+    margin: auto;
+    z-index: 1;
+    margin-top: -40px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 5px grey;
+}
+
+.container input{
+    height: 50px;
+    width: 500px;
+    padding: 0 10px 0 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: black;
+    opacity: 1;
+    color: white;
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.remember input{
+    width: 50px;
+    height: 20px;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+
+.forgot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+
+.forgot a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* animations  */
+
+
+.container input{
+    transition: transform 0.2s ease;
+}
+
+.container input:hover{
+    transform: scale(1.01);
+}
+
+.forgot{
+    transition: transform 0.5s ease;
+}
+
+.forgot a:hover{
+    transform: scale(1.03);
+}
